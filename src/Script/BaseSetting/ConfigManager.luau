@@ -1,13 +1,7 @@
---[[
-    配置管理器 (简化版)
-    使用方法: 
-    1. 先调用ConfigManager.Init()初始化
-    2. 然后通过configmanager.enemy[id]直接访问敌人数据
-]]
 
 -- 在Roblox中，正确引用其他目录的模块
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local TableData = require(ReplicatedStorage.OutputCfg.TableData)
+local TableData = require(ReplicatedStorage.Script.OutputCfg.TableData)
 
 -- 定义配置管理器
 local ConfigManager = {}
